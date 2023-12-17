@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+  
+*
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+.content
+{
+    background: #ebecec;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 40px;
+}
+
+
+.sub
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex ;
+  align-items: center;
+  justify-content: space-around;
+  background: #d6e2e2;
+}
+
+.sub button a 
+{
+  text-decoration: none;
+  color: #0f0d0d;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+</style>
+</head>
+<body>
+   <div class="content">
+    <div class="sel">
+        <label for="">Choose the Semester </label>
+        <select name="" id="mySelect">
+          <option value="S1">S1</option>
+          <option value="S2">S2</option>
+          <option value="S3">S3</option>
+          <option value="S4">S4</option>
+          <option value="S5">S5</option>
+          <option value="S6">S6</option>
+          <option value="S7">S7</option>
+          <option value="S8">S8</option>
+        </select>
+        <button class="submit">Submit</button>
+        <a href="" target="_blank"></a>
+    </div>
+   </div>
+  <iframe src="https://drive.google.com/drive/folders/1jRLq6v2X35i5jZ9T7TLT-izVzwPGDBdw" frameborder="0"></iframe>
+
+   <script src="jquery-3.7.1.min.js"></script>
+   <script>
+
+  
+    var btn = document.querySelector(".submit");
+    btn.addEventListener("click",()=>{
+
+     switch(document.querySelector("#mySelect").value)
+     {
+      case "S1":
+        window.location.href = "s1.php";
+        break;
+      case "S2":
+        window.location.href = "s2.php";
+        break;
+      case "S3":
+        window.location.href = "s3.php";
+        break;
+      case "S4":
+        window.location.href = "s4.php";
+        break;
+      case "S5":
+        window.location.href = "https://drive.google.com/drive/folders/1jRLq6v2X35i5jZ9T7TLT-izVzwPGDBdw";
+        break;
+      case "S6":
+        window.location.href = "s6.php";
+        break;
+      case "S7":
+        window.location.href = "s7.php";
+        break;
+      case "S8":
+        window.location.href = "s8.php";
+        break;
+      default:
+        alert("Please Select the Semester");
+        break;
+     }
+     
+     
+    
+
+})
+   
+    
+
+
+   </script>
+
+</body>
+</html>
